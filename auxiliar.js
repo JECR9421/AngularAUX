@@ -46,5 +46,22 @@ var polling_interval=10;
 
                 }; 
                 poll(i, " ");//i parametro proveniente desde afuera
+				
+	//Settear active a menu			
+				
+	 controller('MainCtrl', function ($scope,$location) {
+		$scope.current = "";
+		$scope.$on('$routeChangeSuccess', function () {
+			
+			$scope.current = $location.path();
+		});				
 
+	<li ng-class="{active: current == '/ingresar'}"><a ng-href="#/ingresar">Ingresar Votos</a></li>
+
+	//For keys json
+	for (var key in p) {
+	  if (p.hasOwnProperty(key)) {
+		alert(key + " -> " + p[key]);
+	  }
+	}	
                   
