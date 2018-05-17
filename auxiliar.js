@@ -64,4 +64,13 @@ var polling_interval=10;
 		alert(key + " -> " + p[key]);
 	  }
 	}	
+	
+	
+	//MANEJO PARA MANIPULAR DATOS PADRES DESDE IFRAME
+	
+	$('#ID', window.parent.document);
+	
+	<a onclick="parent.abc();" href="#" >Call Me </a>
+	
+	
                   
